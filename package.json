@@ -1,0 +1,17 @@
+{
+  "name": "kanka-edrpg-character-sheet",
+  "version": "1.0.0",
+  "description": "A character sheet for the Elite: Dangerous Role Playing Game on Kanka",
+  "author": "Bruno Marques",
+  "license": "MPL-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ElSaico/kanka-edrpg-character-sheet"
+  },
+  "scripts": {
+    "css-watch": "tailwindcss -i css/index.css -o dist.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
