@@ -1,0 +1,54 @@
+@import url('https://fonts.cdnfonts.com/css/exo-2?styles=19650,19641,19643');
+
+/*
+    The CDNFonts stylesheet for Exo 2 Condensed/Expanded returns multiple distinct names for font-family and does not
+    set font-stretch, thus we must declare the variants manually to make them work with Tailwind
+*/
+
+@font-face {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: condensed;
+    src: url('https://fonts.cdnfonts.com/s/14362/Exo2-RegularCondensed.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 500;
+    font-stretch: condensed;
+    src: url('https://fonts.cdnfonts.com/s/14362/Exo2-MediumCondensed.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 600;
+    font-stretch: condensed;
+    src: url('https://fonts.cdnfonts.com/s/14362/Exo2-SemiBoldCondensed.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 500;
+    font-stretch: expanded;
+    src: url('https://fonts.cdnfonts.com/s/14362/Exo2-MediumExpanded.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 600;
+    font-stretch: expanded;
+    src: url('https://fonts.cdnfonts.com/s/14362/Exo2-SemiBoldExpanded.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-stretch: expanded;
+    src: url('https://fonts.cdnfonts.com/s/14362/Exo2-BoldExpanded.woff') format('woff');
+}
