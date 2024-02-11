@@ -10,9 +10,9 @@ module.exports = {
       white: '#ffffff',
       transparent: 'transparent',
       section: {
+        'embedded-header': '#025778',
         'long-corner': '#0e2b45',
         'short-corner': '#236b9d',
-        'embedded-header': '#025778',
         end: '#3397d9'
       },
       notes: '#e3e3e3',
@@ -32,9 +32,10 @@ module.exports = {
       },
       karma: {
         begin: '#2e0078',
+        corner: '#421197',
         end: '#8a51ff',
         notes: '#c2b8ff',
-        header: '#9e9cd1',
+        table: '#9e9cd1',
         name: '#bdbae0'
       },
       endurance: {

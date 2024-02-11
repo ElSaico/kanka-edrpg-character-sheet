@@ -11,10 +11,6 @@
     .font-expanded {
         font-stretch: expanded;
     }
-    .backface-hidden {
-        backface-visibility: hidden;
-        -webkit-backface-visibility: hidden;
-    }
     .fix-clip-path {
         /*
             fix tiny gaps in clip-path elements
