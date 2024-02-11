@@ -6,6 +6,471 @@
     <link href="dist.css" rel="stylesheet">
 </head>
 <body>
-
+    <div class="container mx-auto p-8">
+        <div class="grid grid-cols-12 auto-cols-fr gap-8">
+            <section id="backgrounds" class="col-span-full">
+                <div class="flex flex-col relative">
+                    <img src="img/icon-bg.png" class="absolute size-12 -top-1.5 -left-4 z-10">
+                    <div class="flex">
+                        <div class="flex-none pl-10 bg-gradient-to-r from-black to-section-long-corner text-white uppercase font-bold font-expanded">
+                            Backgrounds
+                        </div>
+                        <div class="flex-none w-5 bg-section-long-corner fix-clip-path [clip-path:polygon(0_0,100%_75%,100%_100%,0_100%)]"></div>
+                        <div class="flex flex-col grow justify-end gap-0.5">
+                            <div class="flex-none">
+                                <img src="img/section-decorate-lg.png">
+                            </div>
+                            <div class="flex flex-none h-1/4 bg-gradient-to-r from-section-long-corner to-section-end justify-end">
+                                <div class="w-0 h-0 border-white border-l-section-end border-t-[6px] border-l-8"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex gap-1">
+                    <div class="flex-none">
+                        <img src="img/section-decorate-left.png" class="relative -top-5">
+                    </div>
+                    <textarea class="border-border bg-gradient-to-r from-notes to-white resize-y mt-0.5 grow" name="background"></textarea>
+                </div>
+            </section>
+            <section id="personal-combat" class="col-span-4">
+                <div class="flex flex-col relative">
+                    <img src="img/icon-combat.png" class="absolute size-12 -top-1.5 -left-4 z-10">
+                    <div class="flex flex-auto grow">
+                        <div class="grow pl-10 bg-gradient-to-r from-black to-section-short-corner text-white tracking-tight uppercase font-medium font-expanded">
+                            Personal combat
+                        </div>
+                        <div class="flex-none w-5 bg-section-short-corner fix-clip-path [clip-path:polygon(0_0,100%_75%,100%_100%,0_100%)]"></div>
+                        <div class="flex flex-col flex-none justify-end gap-0.5">
+                            <div class="flex-none">
+                                <img src="img/section-decorate-sm.png">
+                            </div>
+                            <div class="flex flex-none h-1/4 bg-gradient-to-r from-section-short-corner to-section-end justify-end"></div>
+                        </div>
+                        <div class="w-0 h-0 border-white border-l-section-end border-t-[6px] border-l-8 mt-auto"></div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex-none">
+                        <img src="img/section-decorate-left.png" class="relative -top-5">
+                    </div>
+                    <table class="flex-auto border-separate border-spacing-1 -ml-1">
+                        <thead>
+                            <tr>
+                                <th class="bg-table-header uppercase text-sm text-white text-right font-bold px-1.5">Skill</th>
+                                <th class="bg-table-header uppercase text-sm text-white font-bold w-16 px-1.5">Score</th>
+                                <th class="bg-table-header uppercase text-sm text-white font-bold w-16 px-1.5">Bonus</th>
+                                <th class="bg-table-check uppercase text-sm text-white font-bold w-16 px-1.5">&check;</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5">Dodge</th>
+                                <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                                <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                                <td><input type="text" class="border-table-highlight-border bg-table-highlight w-16 px-1 py-0.5 text-center"></td>
+                            </tr>
+                            <tr>
+                                <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5">Energy Weapons</th>
+                                <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                                <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                                <td><input type="text" class="border-table-highlight-border bg-table-highlight w-16 px-1 py-0.5 text-center"></td>
+                            </tr>
+                            <tr>
+                                <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5">Fighting</th>
+                                <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                                <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                                <td><input type="text" class="border-table-highlight-border bg-table-highlight w-16 px-1 py-0.5 text-center"></td>
+                            </tr>
+                            <tr>
+                                <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5">Grenade</th>
+                                <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                                <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                                <td><input type="text" class="border-table-highlight-border bg-table-highlight w-16 px-1 py-0.5 text-center"></td>
+                            </tr>
+                            <tr>
+                                <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5">Heavy Weapons</th>
+                                <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                                <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                                <td><input type="text" class="border-table-highlight-border bg-table-highlight w-16 px-1 py-0.5 text-center"></td>
+                            </tr>
+                            <tr>
+                                <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5">Kinetic Weapons</th>
+                                <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                                <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                                <td><input type="text" class="border-table-highlight-border bg-table-highlight w-16 px-1 py-0.5 text-center"></td>
+                            </tr>
+                            <tr>
+                                <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5">Melee Weapons</th>
+                                <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                                <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                                <td><input type="text" class="border-table-highlight-border bg-table-highlight w-16 px-1 py-0.5 text-center"></td>
+                            </tr>
+                            <tr>
+                                <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5">Parry</th>
+                                <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                                <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                                <td><input type="text" class="border-table-highlight-border bg-table-highlight w-16 px-1 py-0.5 text-center"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <section id="intelligence" class="col-span-4">
+                <div class="flex flex-col relative">
+                    <img src="img/icon-intel.png" class="absolute size-12 -top-1.5 -left-4 z-10">
+                    <div class="flex flex-auto grow">
+                        <div class="grow pl-10 bg-gradient-to-r from-black to-section-short-corner text-white tracking-tight uppercase font-medium font-expanded">
+                            Intelligence
+                        </div>
+                        <div class="flex-none w-5 bg-section-short-corner fix-clip-path [clip-path:polygon(0_0,100%_75%,100%_100%,0_100%)]"></div>
+                        <div class="flex flex-col flex-none justify-end gap-0.5">
+                            <div class="flex-none">
+                                <img src="img/section-decorate-sm.png">
+                            </div>
+                            <div class="flex flex-none h-1/4 bg-gradient-to-r from-section-short-corner to-section-end justify-end"></div>
+                        </div>
+                        <div class="w-0 h-0 border-white border-l-section-end border-t-[6px] border-l-8 mt-auto"></div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex-none">
+                        <img src="img/section-decorate-left.png" class="relative -top-5">
+                    </div>
+                    <table class="flex-auto border-separate border-spacing-1 -ml-1">
+                        <thead>
+                        <tr>
+                            <th class="bg-table-header uppercase text-sm text-white text-right font-bold px-1.5">Skill</th>
+                            <th class="bg-table-header uppercase text-sm text-white font-bold w-16 px-1.5">Score</th>
+                            <th class="bg-table-header uppercase text-sm text-white font-bold w-16 px-1.5">Bonus</th>
+                            <th class="bg-table-check uppercase text-sm text-white font-bold w-16 px-1.5">&check;</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5">Computer</th>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-table-highlight-border bg-table-highlight w-16 px-1 py-0.5 text-center"></td>
+                        </tr>
+                        <tr>
+                            <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5">Culture &amp; Law</th>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-table-highlight-border bg-table-highlight w-16 px-1 py-0.5 text-center"></td>
+                        </tr>
+                        <tr>
+                            <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5">Cyber</th>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-table-highlight-border bg-table-highlight w-16 px-1 py-0.5 text-center"></td>
+                        </tr>
+                        <tr>
+                            <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5">Medicine</th>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-table-highlight-border bg-table-highlight w-16 px-1 py-0.5 text-center"></td>
+                        </tr>
+                        <tr>
+                            <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5">Planetary Knowledge</th>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-table-highlight-border bg-table-highlight w-16 px-1 py-0.5 text-center"></td>
+                        </tr>
+                        <tr>
+                            <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5">Science</th>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-table-highlight-border bg-table-highlight w-16 px-1 py-0.5 text-center"></td>
+                        </tr>
+                        <tr>
+                            <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5">Tactics</th>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-table-highlight-border bg-table-highlight w-16 px-1 py-0.5 text-center"></td>
+                        </tr>
+                        <tr>
+                            <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5">Trading</th>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-table-highlight-border bg-table-highlight w-16 px-1 py-0.5 text-center"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <section id="social-skills" class="col-span-4">
+                <div class="flex flex-col relative">
+                    <img src="img/icon-social.png" class="absolute size-12 -top-1.5 -left-4 z-10">
+                    <div class="flex flex-auto grow">
+                        <div class="grow pl-10 bg-gradient-to-r from-black to-section-short-corner text-white tracking-tight uppercase font-medium font-expanded">
+                            Social skills
+                        </div>
+                        <div class="flex-none w-5 bg-section-short-corner fix-clip-path [clip-path:polygon(0_0,100%_75%,100%_100%,0_100%)]"></div>
+                        <div class="flex flex-col flex-none justify-end gap-0.5">
+                            <div class="flex-none">
+                                <img src="img/section-decorate-sm.png">
+                            </div>
+                            <div class="flex flex-none h-1/4 bg-gradient-to-r from-section-short-corner to-section-end justify-end"></div>
+                        </div>
+                        <div class="w-0 h-0 border-white border-l-section-end border-t-[6px] border-l-8 mt-auto"></div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex-none">
+                        <img src="img/section-decorate-left.png" class="relative -top-5">
+                    </div>
+                    <table class="flex-auto border-separate border-spacing-1 -ml-1">
+                        <thead>
+                        <tr>
+                            <th class="bg-table-header uppercase text-sm text-white text-right font-bold px-1.5">Skill</th>
+                            <th class="bg-table-header uppercase text-sm text-white font-bold w-16 px-1.5">Score</th>
+                            <th class="bg-table-header uppercase text-sm text-white font-bold w-16 px-1.5">Bonus</th>
+                            <th class="bg-table-check uppercase text-sm text-white font-bold w-16 px-1.5">&check;</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5">Bargain</th>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-table-highlight-border bg-table-highlight w-16 px-1 py-0.5 text-center"></td>
+                        </tr>
+                        <tr>
+                            <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5">Bluff</th>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-table-highlight-border bg-table-highlight w-16 px-1 py-0.5 text-center"></td>
+                        </tr>
+                        <tr>
+                            <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5">Charm</th>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-table-highlight-border bg-table-highlight w-16 px-1 py-0.5 text-center"></td>
+                        </tr>
+                        <tr>
+                            <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5">Diplomacy</th>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-table-highlight-border bg-table-highlight w-16 px-1 py-0.5 text-center"></td>
+                        </tr>
+                        <tr>
+                            <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5">Gambling</th>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-table-highlight-border bg-table-highlight w-16 px-1 py-0.5 text-center"></td>
+                        </tr>
+                        <tr>
+                            <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5">Insight</th>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-table-highlight-border bg-table-highlight w-16 px-1 py-0.5 text-center"></td>
+                        </tr>
+                        <tr>
+                            <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5">Intimidate</th>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-table-highlight-border bg-table-highlight w-16 px-1 py-0.5 text-center"></td>
+                        </tr>
+                        <tr>
+                            <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5">Streetwise</th>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-table-highlight-border bg-table-highlight w-16 px-1 py-0.5 text-center"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <section id="vehicle-skills" class="col-span-4">
+                <div class="flex flex-col relative">
+                    <img src="img/icon-vehicle.png" class="absolute size-12 -top-1.5 -left-4 z-10">
+                    <div class="flex flex-auto grow">
+                        <div class="grow pl-10 bg-gradient-to-r from-black to-section-short-corner text-white tracking-tight uppercase font-medium font-expanded">
+                            Vehicle skills
+                        </div>
+                        <div class="flex-none w-5 bg-section-short-corner fix-clip-path [clip-path:polygon(0_0,100%_75%,100%_100%,0_100%)]"></div>
+                        <div class="flex flex-col flex-none justify-end gap-0.5">
+                            <div class="flex-none">
+                                <img src="img/section-decorate-sm.png">
+                            </div>
+                            <div class="flex flex-none h-1/4 bg-gradient-to-r from-section-short-corner to-section-end justify-end"></div>
+                        </div>
+                        <div class="w-0 h-0 border-white border-l-section-end border-t-[6px] border-l-8 mt-auto"></div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex-none">
+                        <img src="img/section-decorate-left.png" class="relative -top-5">
+                    </div>
+                    <table class="flex-auto border-separate border-spacing-1 -ml-1">
+                        <thead>
+                        <tr>
+                            <th class="bg-table-header uppercase text-sm text-white text-right font-bold px-1.5">Skill</th>
+                            <th class="bg-table-header uppercase text-sm text-white font-bold w-16 px-1.5">Score</th>
+                            <th class="bg-table-header uppercase text-sm text-white font-bold w-16 px-1.5">Bonus</th>
+                            <th class="bg-table-check uppercase text-sm text-white font-bold w-16 px-1.5">&check;</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5">Navigation</th>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-table-highlight-border bg-table-highlight w-16 px-1 py-0.5 text-center"></td>
+                        </tr>
+                        <tr>
+                            <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5">Repair</th>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-table-highlight-border bg-table-highlight w-16 px-1 py-0.5 text-center"></td>
+                        </tr>
+                        <tr>
+                            <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5">Spaceship Piloting</th>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-table-highlight-border bg-table-highlight w-16 px-1 py-0.5 text-center"></td>
+                        </tr>
+                        <tr>
+                            <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5">Spaceship Weapons</th>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-table-highlight-border bg-table-highlight w-16 px-1 py-0.5 text-center"></td>
+                        </tr>
+                        <tr>
+                            <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5">Systems</th>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-table-highlight-border bg-table-highlight w-16 px-1 py-0.5 text-center"></td>
+                        </tr>
+                        <tr>
+                            <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5">Vehicle Piloting</th>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-table-highlight-border bg-table-highlight w-16 px-1 py-0.5 text-center"></td>
+                        </tr>
+                        <tr>
+                            <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5">Vehicle Weapons</th>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-table-highlight-border bg-table-highlight w-16 px-1 py-0.5 text-center"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <section id="espionage" class="col-span-4">
+                <div class="flex flex-col relative">
+                    <img src="img/icon-espionage.png" class="absolute size-12 -top-1.5 -left-4 z-10">
+                    <div class="flex flex-auto grow">
+                        <div class="grow pl-10 bg-gradient-to-r from-black to-section-short-corner text-white tracking-tight uppercase font-medium font-expanded">
+                            Espionage
+                        </div>
+                        <div class="flex-none w-5 bg-section-short-corner fix-clip-path [clip-path:polygon(0_0,100%_75%,100%_100%,0_100%)]"></div>
+                        <div class="flex flex-col flex-none justify-end gap-0.5">
+                            <div class="flex-none">
+                                <img src="img/section-decorate-sm.png">
+                            </div>
+                            <div class="flex flex-none h-1/4 bg-gradient-to-r from-section-short-corner to-section-end justify-end"></div>
+                        </div>
+                        <div class="w-0 h-0 border-white border-l-section-end border-t-[6px] border-l-8 mt-auto"></div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex-none">
+                        <img src="img/section-decorate-left.png" class="relative -top-5">
+                    </div>
+                    <table class="flex-auto border-separate border-spacing-1 -ml-1">
+                        <thead>
+                        <tr>
+                            <th class="bg-table-header uppercase text-sm text-white text-right font-bold px-1.5">Skill</th>
+                            <th class="bg-table-header uppercase text-sm text-white font-bold w-16 px-1.5">Score</th>
+                            <th class="bg-table-header uppercase text-sm text-white font-bold w-16 px-1.5">Bonus</th>
+                            <th class="bg-table-check uppercase text-sm text-white font-bold w-16 px-1.5">&check;</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5">Athletics</th>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-table-highlight-border bg-table-highlight w-16 px-1 py-0.5 text-center"></td>
+                        </tr>
+                        <tr>
+                            <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5">Perception</th>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-table-highlight-border bg-table-highlight w-16 px-1 py-0.5 text-center"></td>
+                        </tr>
+                        <tr>
+                            <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5">Security</th>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-table-highlight-border bg-table-highlight w-16 px-1 py-0.5 text-center"></td>
+                        </tr>
+                        <tr>
+                            <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5">Sleight of Hand</th>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-table-highlight-border bg-table-highlight w-16 px-1 py-0.5 text-center"></td>
+                        </tr>
+                        <tr>
+                            <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5">Stealth</th>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-table-highlight-border bg-table-highlight w-16 px-1 py-0.5 text-center"></td>
+                        </tr>
+                        <tr>
+                            <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5">Survival</th>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                            <td><input type="text" class="border-table-highlight-border bg-table-highlight w-16 px-1 py-0.5 text-center"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <section id="enhancements" class="col-span-4">
+                <div class="flex flex-col relative">
+                    <img src="img/icon-enhance.png" class="absolute size-12 -top-1.5 -left-4 z-10">
+                    <div class="flex flex-auto grow">
+                        <div class="grow pl-10 bg-gradient-to-r from-black to-section-short-corner text-white tracking-tight uppercase font-medium font-expanded">
+                            Enhancements
+                        </div>
+                        <div class="flex-none w-5 bg-section-short-corner fix-clip-path [clip-path:polygon(0_0,100%_75%,100%_100%,0_100%)]"></div>
+                        <div class="flex flex-col flex-none justify-end gap-0.5">
+                            <div class="flex-none">
+                                <img src="img/section-decorate-sm.png">
+                            </div>
+                            <div class="flex flex-none h-1/4 bg-gradient-to-r from-section-short-corner to-section-end justify-end"></div>
+                        </div>
+                        <div class="w-0 h-0 border-white border-l-section-end border-t-[6px] border-l-8 mt-auto"></div>
+                    </div>
+                </div>
+                <div class="flex gap-1">
+                    <div class="flex-none">
+                        <img src="img/section-decorate-left.png" class="relative -top-5">
+                    </div>
+                    <div class="flex-auto relative mt-1">
+                        <div class="flex absolute">
+                            <div class="pl-6 pr-2 bg-table-header text-white tracking-tight uppercase font-bold">
+                                Description/Effect
+                            </div>
+                            <div class="w-0 h-0 border-transparent border-t-table-header border-t-[24px] border-r-[24px]"></div>
+                        </div>
+                        <textarea class="pt-8 border-border bg-gradient-to-r from-notes to-white resize-y size-full"></textarea>
+                    </div>
+                </div>
+            </section>
+            <section id="ranged-weapons"></section>
+            <section id="close-combat"></section>
+            <section id="karma-capabilities"></section>
+            <section id="carried-weapons"></section>
+            <section id="clothing"></section>
+            <section id="equipment-pack"></section>
+            <section id="equipment-ship"></section>
+            <section id="cash"></section>
+        </div>
+    </div>
 </body>
 </html>

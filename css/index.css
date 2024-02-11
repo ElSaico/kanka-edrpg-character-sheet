@@ -3,3 +3,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .font-condensed {
+        font-stretch: condensed;
+    }
+    .font-expanded {
+        font-stretch: expanded;
+    }
+    .backface-hidden {
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+    }
+    .fix-clip-path {
+        /*
+            fix tiny gaps in clip-path elements
+            https://stackoverflow.com/questions/51542919/clip-path-on-chrome-leaves-a-strange-line-on-the-edge
+        */
+        transform: scaleZ(1.001);
+    }
+}
