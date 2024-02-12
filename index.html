@@ -462,8 +462,10 @@
                     </div>
                 </div>
             </section>
-            <section id="ranged-weapons"></section>
-            <section id="close-combat"></section>
+            <section id="ranged-weapons" class="col-span-full">
+            </section>
+            <section id="close-combat" class="col-span-full">
+            </section>
             <section id="karma-capabilities" class="col-span-8">
                 <div class="flex flex-col relative">
                     <img src="img/icon-karma.png" class="absolute size-12 -top-1.5 -left-4 z-10">
@@ -572,12 +574,261 @@ You escape or avoid an attack that just killed you or reduced your Endurance to 
             <section id="cash" class="col-span-4">
             </section>
             <section id="carried-weapons" class="col-span-6">
+                <div class="flex flex-col relative">
+                    <img src="img/icon-weapon.png" class="absolute size-12 -top-1.5 -left-4 z-10">
+                    <div class="flex flex-auto grow">
+                        <div class="grow pl-10 pr-1 bg-gradient-to-r from-black to-section-short-corner text-white tracking-tight uppercase font-medium font-expanded">
+                            Carried weapons
+                        </div>
+                        <div class="flex-none w-5 bg-section-short-corner fix-clip-path [clip-path:polygon(0_0,100%_75%,100%_100%,0_100%)]"></div>
+                        <div class="flex flex-col flex-none justify-end gap-0.5">
+                            <div class="flex-none">
+                                <img src="img/section-decorate-small.png">
+                            </div>
+                            <div class="flex flex-none h-1/4 bg-gradient-to-r from-section-short-corner to-section-end justify-end"></div>
+                        </div>
+                        <div class="w-0 h-0 border-white border-l-section-end border-t-[6px] border-l-8 mt-auto"></div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex-none">
+                        <img src="img/section-decorate-left.png" class="relative -top-5">
+                    </div>
+                    <table class="flex-auto border-separate border-spacing-1 -mx-1">
+                        <tbody>
+                        <tr>
+                            <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5">Primary Weapon</th>
+                            <td colspan="3"><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                        </tr>
+                        <tr>
+                            <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5">Secondary Weapon</th>
+                            <td><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                            <td colspan="2" class="text-border text-xs leading-none uppercase font-thin font-condensed w-9 p-0">One handed only</td>
+                        </tr>
+                        <tr>
+                            <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5">Clip/Grenade</th>
+                            <td colspan="3"><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                        </tr>
+                        <tr>
+                            <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5">Clip/Grenade</th>
+                            <td colspan="3"><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                        </tr>
+                        <tr>
+                            <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5">Clip/Grenade</th>
+                            <td colspan="2"><input type="text" class="border-border bg-table-military w-full px-1 py-0.5"></td>
+                            <td rowspan="3" class="text-table-header text-xs uppercase font-thin font-condensed w-4 p-0 -my-0.5 vertical-lr">Military fatigues only</td>
+                        </tr>
+                        <tr>
+                            <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5">Clip/Grenade</th>
+                            <td colspan="2"><input type="text" class="border-border bg-table-military w-full px-1 py-0.5"></td>
+                        </tr>
+                        <tr>
+                            <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5">Grenade</th>
+                            <td colspan="2"><input type="text" class="border-border bg-table-military w-full px-1 py-0.5"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
             </section>
             <section id="clothing" class="col-span-6">
+                <div class="flex flex-col relative">
+                    <img src="img/icon-clothing.png" class="absolute size-12 -top-1.5 -left-4 z-10">
+                    <div class="flex flex-auto grow">
+                        <div class="grow pl-10 pr-1 bg-gradient-to-r from-black to-section-short-corner text-white tracking-tight uppercase font-medium font-expanded">
+                            Clothing
+                        </div>
+                        <div class="flex-none w-5 bg-section-short-corner fix-clip-path [clip-path:polygon(0_0,100%_75%,100%_100%,0_100%)]"></div>
+                        <div class="flex flex-col flex-none justify-end gap-0.5">
+                            <div class="flex-none">
+                                <img src="img/section-decorate-small.png">
+                            </div>
+                            <div class="flex flex-none h-1/4 bg-gradient-to-r from-section-short-corner to-section-end justify-end"></div>
+                        </div>
+                        <div class="w-0 h-0 border-white border-l-section-end border-t-[6px] border-l-8 mt-auto"></div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex-none">
+                        <img src="img/section-decorate-left.png" class="relative -top-5">
+                    </div>
+                    <table class="flex-auto border-separate border-spacing-1 -mx-1">
+                        <thead>
+                        <tr>
+                            <th class="bg-table-header uppercase text-sm text-white text-right font-bold w-36 px-1.5">Item</th>
+                            <th class="bg-table-header uppercase text-sm text-white font-bold w-fit px-1.5">Notes</th>
+                            <th class="bg-table-header uppercase text-sm text-white font-bold w-16 px-1.5">Worn</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5"></th>
+                            <td><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                        </tr>
+                        <tr>
+                            <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5"></th>
+                            <td><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                        </tr>
+                        <tr>
+                            <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5"></th>
+                            <td><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                        </tr>
+                        <tr>
+                            <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5"></th>
+                            <td><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                        </tr>
+                        <tr>
+                            <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5"></th>
+                            <td><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                        </tr>
+                        <tr>
+                            <th class="bg-gradient-to-r from-white to-table-name text-right font-medium font-condensed px-1.5"></th>
+                            <td><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-16 px-1 py-0.5 text-center"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
             </section>
             <section id="equipment-pack" class="col-span-6">
+                <div class="flex flex-col relative">
+                    <img src="img/icon-pack.png" class="absolute size-12 -top-1.5 -left-4 z-10">
+                    <div class="flex">
+                        <div class="flex-none pl-10 pr-1 bg-gradient-to-r from-black to-section-long-corner text-white uppercase font-expanded">
+                            Equipment stored in pack
+                        </div>
+                        <div class="flex-none w-5 bg-section-long-corner fix-clip-path [clip-path:polygon(0_0,100%_75%,100%_100%,0_100%)]"></div>
+                        <div class="flex flex-col grow justify-end gap-0.5">
+                            <div class="flex-none">
+                                <img src="img/section-decorate-large.png">
+                            </div>
+                            <div class="flex flex-none h-1/4 bg-gradient-to-r from-section-long-corner to-section-end justify-end">
+                                <div class="w-0 h-0 border-white border-l-section-end border-t-[6px] border-l-8"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex-none">
+                        <img src="img/section-decorate-left.png" class="relative -top-5">
+                    </div>
+                    <table class="flex-auto border-separate border-spacing-0.5">
+                        <tbody>
+                        <tr>
+                            <td><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
             </section>
             <section id="equipment-ship" class="col-span-6">
+                <div class="flex flex-col relative">
+                    <img src="img/icon-ship.png" class="absolute size-12 -top-1.5 -left-4 z-10">
+                    <div class="flex">
+                        <div class="flex-none pl-10 pr-1 bg-gradient-to-r from-black to-section-long-corner text-white uppercase font-expanded">
+                            Equipment stored in ship
+                        </div>
+                        <div class="flex-none w-5 bg-section-long-corner fix-clip-path [clip-path:polygon(0_0,100%_75%,100%_100%,0_100%)]"></div>
+                        <div class="flex flex-col grow justify-end gap-0.5">
+                            <div class="flex-none">
+                                <img src="img/section-decorate-large.png">
+                            </div>
+                            <div class="flex flex-none h-1/4 bg-gradient-to-r from-section-long-corner to-section-end justify-end">
+                                <div class="w-0 h-0 border-white border-l-section-end border-t-[6px] border-l-8"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex-none">
+                        <img src="img/section-decorate-left.png" class="relative -top-5">
+                    </div>
+                    <table class="flex-auto border-separate border-spacing-0.5">
+                        <tbody>
+                        <tr>
+                            <td><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                            <td><input type="text" class="border-border bg-table-cell w-full px-1 py-0.5"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
             </section>
         </div>
     </div>

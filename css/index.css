@@ -18,4 +18,7 @@
         */
         transform: scaleZ(1.001);
     }
+    .vertical-lr {
+        writing-mode: vertical-lr;
+    }
 }
